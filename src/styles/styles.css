@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(238, 114, 184);
+}
+
+section{
+    padding: 28px 8%;
+}
+
+.btn-default{
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    border-radius: 12px;
+    padding: 10px 14px;
+    font-weight: 600;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color .3s ease;
+}
+
+.btn-default:hover {
+    background-color: rgb(234, 76, 76);
+}
+
+.section-title {
+    color: red;
+    font-size: 2.13rem;
+}
+
+.section-subtitle {
+    font-size: 2.1875rem;
+
+}
+
+/* Container das opções de data */
+.quiz-options {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* Estilo padrão do botão de data */
+.quiz-btn {
+    width: 100%;
+    padding: 8px 12px;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    background-color: #ff08a5;
+    color: #1d1d1d;
+    font-weight: 500;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Efeito de passar o mouse por cima */
+.quiz-btn:hover {
+    background-color: #fff9f9;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Classe quando acertar (Verde) */
+.quiz-btn.correct {
+    background-color: #4CAF50 !important;
+    color: white !important;
+    font-weight: bold;
+}
+
+/* Classe quando errar (Vermelho) */
+.quiz-btn.wrong {
+    background-color: #f44336 !important;
+    color: white !important;
+}

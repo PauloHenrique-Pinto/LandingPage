@@ -1,0 +1,160 @@
+#home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: calc(100vh - 91px);
+    position: relative;
+    padding: 0 8%;
+}
+
+#cta {
+    width: 45%;
+    z-index: 2;
+}
+
+#cta .title{
+    font-size: 2.5rem;
+    color: #1d1d1d    
+}
+
+#cta .description {
+    font-size: 1.2rem;
+}
+
+#cta_buttons {
+    display: flex;
+    gap: 24px;
+}
+
+#cta_buttons a{
+    text-decoration: none;
+    color:#1d1d1d;
+}
+
+#phone_button{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    background-color: rgb(247, 118, 184);
+    padding: 8px 14px;
+    font-weight: 500;
+    box-shadow: 0px 0px 12px 4px rgba(0, 0,0,0.1);
+    border-radius: 12px;
+}
+#banner {
+    width: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#banner img {
+    /* Controle o tamanho da foto aqui */
+    width: 95%;          
+    max-width: 600px;    
+    height: auto;
+    
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    position: relative;
+    z-index: 2;          /* Foto fica por cima */
+}
+
+/* Este elemento agora cria a moldura perfeita ao redor da foto */
+#banner::before {
+    content: '';
+    position: absolute;
+    
+    /* 1. Faz o fundo ser maior que a foto para sobrar o contorno */
+    width: 100%;          /* Um pouco maior que os 85% da foto */
+    max-width: 620px;    /* Um pouco maior que os 500px da foto */
+    height: 116%;        /* Altura maior para contornar em cima e embaixo */
+    
+    /* 2. Mantém a curvatura harmoniosa com a foto */
+    border-radius: 30px; 
+    background-color: #f6c8d7;
+    
+    /* 3. Centraliza perfeitamente o fundo atrás da imagem */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); 
+    
+    z-index: 1;          /* Fica por trás */
+}
+
+@media screen and (max-width: 1170px){
+    #home {
+        min-height: 100%;
+        padding-top: 0px;
+    }
+
+    #banner,
+    #banner img,
+    #home .shape{
+        display: none;
+    }
+
+    #cta {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #phone_button button{
+        display: none; 
+    }
+}
+
+/* --- SEÇÃO DO CARDÁPIO --- */
+#menu {
+    display: flex;
+    flex-direction: column;
+    padding: 60px 8%;
+    background-color: #f584b7; /* Cor rosa do seu fundo original */
+    min-height: auto;
+}
+
+/* Container que alinha os itens lado a lado */
+#dishes {
+    display: flex !important;      /* Força o Flexbox para alinhar lado a lado */
+    flex-direction: row !important; /* Garante a direção em linha */
+    justify-content: flex-start;   /* Alinha os itens à esquerda como no seu exemplo */
+    gap: 24px !important;          /* Espaçamento entre as imagens */
+    margin-top: 32px !important;
+    flex-wrap: wrap;               /* Se quebrar a tela em telas menores, eles vão para baixo suavemente */
+}
+
+/* O box individual de cada prato */
+.dish {
+    position: relative !important;
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    gap: 18px;
+    padding: 20px;
+    background-color: pink;
+    box-shadow: 0px 0px 12px 4px rgba(0,0,0,0.1);
+}
+
+/* O tamanho perfeito e redondo que você aprovou */
+.dish img {
+    width: 150px !important;       /* Mantido o tamanho ideal */
+    height: 150px !important;      /* Altura idêntica para o círculo perfeito */
+    border-radius: 50% !important;  /* Formato circular */
+    object-fit: cover !important;   /* Evita distorção na imagem */
+    display: block !important;
+}
+
+/* Ajuste do ícone de coração sobreposto */
+.dish-heart {
+    position: absolute !important;
+    top: 15px !important;
+    left: 15px !important;
+    z-index: 10 !important;
+    font-size: 1.536rem;
+    color: #1d1d1d;
+}

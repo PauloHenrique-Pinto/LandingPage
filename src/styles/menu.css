@@ -1,0 +1,73 @@
+#menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 60px 8%;
+}
+#dishes {
+    width: 110% !important;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+    gap: 35px !important;               /* Aumentamos o espaçamento de 16px para 35px */
+    margin-top: 32px !important;
+    flex-wrap: nowrap !important;       /* Mantém todos travados na mesma linha */
+}
+
+.dish {
+    position: relative !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    border-radius: 20px !important;
+    gap: 12px !important;
+    width: 17% !important;              /* Reduzido levemente de 18% para 17% para abrir espaço para o gap */
+    min-width: 140px !important;
+    padding: 15px !important;
+    background-color: pink !important;  /* Sua cor rosa original mantida */
+    box-shadow: 0px 0px 12px 4px rgba(0,0,0,0.1) !important;
+}
+
+/* Tamanho e formato redondo das fotos */
+.dish img {
+    width: 170px !important;
+    height: 170px !important;
+    border-radius: 50% !important;
+    object-fit: cover !important;
+    display: block !important;
+}
+
+.dish-heart {
+    position: absolute;
+    background-color: pink;              /* Sua cor rosa mantida */
+    display: flex;
+    align-items: center;
+    align-content: center;
+    font-size: 1.536rem;
+    top: 15px;
+    left: 15px;
+    z-index: 10;
+}
+
+@media screen and (max-width: 1170px) {
+    #dishes{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .dish {
+        width: calc(50% - 12px);
+    }
+}
+
+@media screen and (max-width: 600px){
+    .dish {
+        width: calc(100% - 12px);
+    }
+
+    #menu .section-subtitle {
+        text-align: center;
+    }
+}

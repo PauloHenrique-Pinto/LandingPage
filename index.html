@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="src/styles/styles.css">
+    <link rel="stylesheet" href="src/styles/header.css">
+    <link rel="stylesheet" href="src/styles/home.css">
+    <link rel="stylesheet" href="src/styles/menu.css">
+    <link rel="stylesheet" href="src/styles/testimonials.css">
+    <link rel="stylesheet" href="src/styles/footer.css">
+    <link rel="stylesheet" href="src/styles/music.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Feliz dia dos namorados</title>
+</head>
+<body>
+
+    <audio id="background-music" loop>
+    <source src="audio/Taylor Swift - Call It What You Want (Lyric Video).mp4" type="audio/mpeg">
+    Seu navegador não suporta áudio.
+</audio>
+
+<button id="music-toggle" class="music-btn">
+    <i class="fa-solid fa-music"></i>
+</button>
+
+    <header>
+        <nav id="navbar">
+           <i class="fa-solid fa-heart" id="nav_logo">Amor</i>
+
+           <ul id="nav_list">
+    <li class="nav-item active">
+        <a href="#TeAmo">Te Amo</a>
+    </li>
+    <li class="nav-item"> <a href="#Pictures">História</a>
+    </li>
+    <li class="nav-item"> <a href="#Message">Mensagem</a>
+    </li>
+</ul>
+
+           <button class="btn-default">
+             Moments
+           </button>
+
+           <button>
+              <i class="fa-solid fa-bars"></i>
+           </button>
+
+           <button id="mobile_btn">
+             <i class="fa-solid fa-bars"></i>
+           </button>
+        </nav>
+
+        <div id="mobile_pictures">
+         <ul id="mobile_nav_list">
+             <li class="nav_item">
+                <a href="#TeAmo">Te Amo</a>
+             </li>
+            <li class="mobile_nav_item">
+                <a href="#Pictures">História</a>
+            </li>
+            <li class="nav_item">
+                <a href="#Message">Mensagem</a>
+            </li>
+           </ul>
+
+           
+           <button class="btn-default">
+             Moments
+           </button>
+        </div> 
+    </header>
+
+    <main id="content">
+        <section id="home">
+           <div id="cta">
+               <h1 class="title">
+                Feliz Dia dos Namorados
+               </h1>
+               <p class="description">
+                Meu amor, hoje estamos comemorando nosso primeiro dia dos namorados, e eu queria fazer alguma coisa especial pra você, pra te desmonstrar o tanto que você significa pra mim e o tanto que eu te amo. Eu estava me batendo muito para pensar em algo, até que eu pensei do nada em criar um site meu bem, e eu fico muito feliz que deu certo, e eu fico muito feliz com isso, porque emu amor, nesse site, você vai ver alguns(porque é impossível citar todos de tantos que são) dos motivos do porque eu te amo e do quanto eu admiro quem você é. Mas saiba que, pra mim, isso ainda ta pouco meu amor, porque você merece muito mais, tudo de bom e de melhor, porque você é incrível, a melhor namorada do mundo, a melhor amiga e parceira do mundo, e porque é desse jeito que você faz eu me sentir todos os dias. Bom amor, despois dessa introdução enorme parecendo um livro, vamo pro site vida? Tem umas coisas legais aqui 👀
+               </p>
+
+               <div id="cta_buttons">
+                <a href="#" class="btn-default">
+                    Memórias
+                </a>
+
+                <a href="tel:+5579988069969" id="phone_button">
+                    <button class="btn-default">
+                        <i class="fa-solid fa-phone"></i>
+                    </button>
+                     (79) 98806-9969
+                </a>
+               </div>
+           </div> 
+           <div id="banner">
+             <img src="images/WhatsApp Image 2026-04-13 at 21.41.08.jpeg"
+           </div>
+        </section>
+
+  <section id="menu">
+    <h2 class="section-title">Jogo das Memórias</h2>
+    <h3 class="section-subtitle">Amor, vamo testar sua memória?</h3>
+
+    <div id="dishes">
+        
+        <div class="dish" data-correct="1"> <div class="dish-heart">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+            <img src="images/imagem1.jpeg" alt="">
+            <h3 class="dish-title">Sua surpresa no colégio</h3>
+            <div class="quiz-options">
+                <button class="quiz-btn">15/12/2025</button>
+                <button class="quiz-btn">04/03/2026</button>
+                <button class="quiz-btn">15/03/2026</button>
+                <button class="quiz-btn">13/02/2026</button>
+            </div>
+        </div>
+
+        <div class="dish" data-correct="0"> <div class="dish-heart">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+            <img src="images/imagem5.jpeg" class="dish-image" alt="">
+            <h3 class="dish-title">Dia do Parque</h3>
+            <div class="quiz-options">
+                <button class="quiz-btn">19/12/2025</button>
+                <button class="quiz-btn">15/12/2025</button>
+                <button class="quiz-btn">09/12/2025</button>
+                <button class="quiz-btn">11/12/2025</button>
+            </div>
+        </div>
+
+        <div class="dish" data-correct="3"> <div class="dish-heart">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+            <img src="images/imagem2.jpeg" class="dish-image" alt="">
+            <h3 class="dish-title">Nosso Primeiro Encontro</h3>
+            <div class="quiz-options">
+                <button class="quiz-btn">16/01/2026</button>
+                <button class="quiz-btn">13/02/2026</button>
+                <button class="quiz-btn">07/01/2026</button>
+                <button class="quiz-btn">15/12/2025</button>
+            </div>
+        </div>
+
+        <div class="dish" data-correct="2">
+            <div class="dish-heart">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+            <img src="images/imagem3.jpeg" class="dish-image" alt="">
+            <h3 class="dish-title">Shrek e Dragoa</h3>
+            <div class="quiz-options">
+                <button class="quiz-btn">07/01/2026</button>
+                <button class="quiz-btn">13/02/2026</button>
+                <button class="quiz-btn">11/12/2025</button>
+                <button class="quiz-btn">15/03/2026</button>
+            </div>
+        </div>
+
+        <div class="dish" data-correct="0">
+            <div class="dish-heart">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+            <img src="images/imagem4.jpeg" class="dish-image" alt="">
+            <h3 class="dish-title">Primeiro "Te Amo"</h3>
+            <div class="quiz-options">
+                <button class="quiz-btn">13/02/2026</button>
+                <button class="quiz-btn">16/01/2026</button>
+                <button class="quiz-btn">07/01/2026</button>
+                <button class="quiz-btn">13/03/2026</button>
+            </div>
+        </div>
+
+         <div class="dish" data-correct="0">
+            <div class="dish-heart">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+            <img src="images/WhatsApp Image 2026-04-13 at 21.37.00 (2).jpeg" class="dish-image" alt="">
+            <h3 class="dish-title">Sua Festa de Aniversario</h3>
+            <div class="quiz-options">
+                <button class="quiz-btn">13/03/2026</button>
+                <button class="quiz-btn">16/01/2026</button>
+                <button class="quiz-btn">07/01/2026</button>
+                <button class="quiz-btn">15/03/2026</button>
+            </div>
+        </div>
+
+    </div> 
+</section>
+
+<section id="testimonials">
+    
+
+    <div id="testimonials_content"> 
+        <h2 class="section-title">Mensagens</h2>
+        <h3 class="section-subtitle">Motivos para você ser a melhor namorada do mundo</h3>
+
+
+        <img src="images/sem_fundo.png" id="testimonial_chef" alt="Hello Kitty">
+        <div id="testimonials-container">
+            
+            <div class="testimonial-card">
+                <img src="images/spiderman_sem_fundo.png" class="feedback-avatar" alt="Spiderman">
+                
+                <div class="testimonial-bubble">
+                    <p>Meu amor, o primeiro motivo é por causa de como você faz eu me sentir todo santo dia. Eu acho que não tem nada melhor nesse mundo do que acordar todo dia com uma mensagem de bom dia sua; ler uma mensagem no zap sua dizendo que me ama; poder dizer que eu te amo de volta, porque eu te amo e muuuuuuito; chegar no fim de semana sabendo que vou te ver e vou passar meu dia todinhoo grudado com você; e chegar em casa cansando da faculdade, sabendo que quando eu chegar, eu vou fazer minha coisa favorita nesse mundo todo que é conversar e ficar com você meu amor. Obrigado por tudo isso e por muito mais meu bem, eu te amo demais!</p>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <img src="images/spiderman_sem_fundo.png" class="feedback-avatar" alt="Spiderman">
+                <div class="testimonial-bubble">
+                    <p>Amor, o segundo motivo é pelo que você sempre faz por mim. Meu bem, eu não tenho palavras pra descrever o quanto eu sou grato por, sempre que eu estou estressado com alguma coisa da faculdade ou chateado por algum problema pessoal, saber que você vai estar la pra me ouvir e me dar os melhores conselhos; pelas surpresas que você me faz meu bem, que você gasta um monte do seu tempo preparando coisas pra mim com muito carinho e sempre pensando naquilo que eu vou gostar mais; por você sempre me apoiar, gostar das minhas brincadeiras meio autistas, e principalmente, por você sempre acreditar no meu potencial e me encorajar meu amor, mesmo quando eu mesmo não consigo. Muito obrigado meu bem, eu te amo muito, e eu estou e sempre vou estar aqui pra você meu amor!</p>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <img src="images/spiderman_sem_fundo.png" class="feedback-avatar" alt="Spiderman">
+                <div class="testimonial-bubble">
+                    <p>O terceiro motivo meu bem é o tanto que eu te admiro. Meu amor, eu nunca conheci alguem tão engraçada e divertida quanto você(foi assim que me consquistou ne, fazer o que se você é incrível e eu te amo); alguém tão gente boa, companheira, inteligente, bondosa, genrosa, dedicada, esforçada, e que sempre ta disposta a ajudar os amigos, sempre se preocupando com os outros meu bem e querendo que aqueles que ama tenham as melhores experiências possíveis e as melhores coisas na vida. Você é incrível meu amor, e eu tenho um orgulho imenso de você meu bem, e sempre vou ter. Eu te amo!</p>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <img src="images/spiderman_sem_fundo.png" class="feedback-avatar" alt="Spiderman">
+                <div class="testimonial-bubble">
+                    <p>Amor, meu quarto motivo é....................................................................................................................................................................................................... Não acredito que você realmente achou que so iam ser quarto vida! Amor, os motivos do porque você é a melhor namorada do mundo são INFINITOS! Eu poderia passar o ano todo aqui escrevendo os motivos de você ser tão incrivel, gastar todas as canetas, cadernos, quadros, folhas, do mundo, e ainda não ia chegar a nem metade. Você é a melhor namorada desse mundo todo meu bem, a Gwen do meu Peter, a Mavis do meu Johnny, o 6 do meu 7, a Eleanor Shellstrop do meu Chidi Anagonye, a Judy do meu Nick, a Taylor Swift do meu Travis Kelce, e principalmente, a Dragoa do meu Shrek. Eu te amo demais meu bem!</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>Feito com <i class="fa-solid fa-heart footer-heart"></i> para o amor da minha vida</p>
+            <span>&copy; 2026 - Todos os nossos momentos guardados para sempre.</span>
+        </div>
+    </footer>
+
+    <script src="src/javascript/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+/* --- ESTILIZAÇÃO DO FOOTER --- */
+footer {
+    width: 100%;
+    background-color: #f584b7; /* Um tom de rosa ligeiramente mais escuro/sólido para dar acabamento */
+    padding: 30px 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid #ff85b3; /* Uma linha sutil separando a última seção do rodapé */
+}
+
+.footer-content {
+    text-align: center;
+    color: #ffffff; /* Letras brancas para excelente leitura sobre o fundo rosa */
+}
+
+.footer-content p {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+/* Animaçãozinha opcional pro coração do rodapé ficar pulsando de leve */
+.footer-heart {
+    color: red;
+    animation: pulse 1.5s infinite;
+}
+
+.footer-content span {
+    font-size: 0.85rem;
+    opacity: 0.8; /* Deixa o texto do copyright um pouco mais discreto */
+}
+
+/* Lógica da animação de pulsar */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.15); }
+    100% { transform: scale(1); }
+}
