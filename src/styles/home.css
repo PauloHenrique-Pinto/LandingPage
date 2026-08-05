@@ -4,7 +4,8 @@
     justify-content: space-between;
     min-height: calc(100vh - 91px);
     position: relative;
-    padding: 0 8%;
+    padding: 120px 8% 40px;
+    gap: 40px;
 }
 
 #cta {
@@ -24,6 +25,8 @@
 #cta_buttons {
     display: flex;
     gap: 24px;
+    margin-top: 24px;
+    flex-wrap: wrap;
 }
 
 #cta_buttons a{
@@ -40,6 +43,7 @@
     font-weight: 500;
     box-shadow: 0px 0px 12px 4px rgba(0, 0,0,0.1);
     border-radius: 12px;
+    flex-wrap: wrap;
 }
 #banner {
     width: 50%;
@@ -83,78 +87,87 @@
     z-index: 1;          /* Fica por trás */
 }
 
-@media screen and (max-width: 1170px){
-    #home {
-        min-height: 100%;
-        padding-top: 0px;
-    }
+@media screen and (max-width:1170px){
 
-    #banner,
-    #banner img,
-    #home .shape{
-        display: none;
-    }
-
-    #cta {
-        width: 100%;
+    #home{
+        flex-direction: column;
+        justify-content: center;
         text-align: center;
-        align-items: center;
+        padding-top: 120px;
+        gap: 40px;
     }
+
+    #cta{
+        width:100%;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
+
+    #cta .title{
+        font-size:2.2rem;
+    }
+
+    #cta .description{
+        margin-top:20px;
+    }
+
+    #cta_buttons{
+        justify-content:center;
+    }
+
+    #banner{
+        display:flex;
+        width:100%;
+        margin-top:20px;
+    }
+
+    #banner::before{
+        display:none;
+    }
+
+    #banner img{
+        display:block;
+        width:80%;
+        max-width:350px;
+    }
+
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width:450px){
+
+    #home{
+        padding-top:110px;
+    }
+
+    #cta .title{
+        font-size:1.8rem;
+    }
+
+    #cta .description{
+        font-size:1rem;
+    }
+
+    #cta_buttons{
+        flex-direction:column;
+        width:100%;
+    }
+
+    #cta_buttons a{
+        width:100%;
+    }
+
+    .btn-default{
+        width:100%;
+    }
+
+    #phone_button{
+        justify-content:center;
+        width:100%;
+    }
+
     #phone_button button{
-        display: none; 
+        display:none;
     }
-}
 
-/* --- SEÇÃO DO CARDÁPIO --- */
-#menu {
-    display: flex;
-    flex-direction: column;
-    padding: 60px 8%;
-    background-color: #f584b7; /* Cor rosa do seu fundo original */
-    min-height: auto;
-}
-
-/* Container que alinha os itens lado a lado */
-#dishes {
-    display: flex !important;      /* Força o Flexbox para alinhar lado a lado */
-    flex-direction: row !important; /* Garante a direção em linha */
-    justify-content: flex-start;   /* Alinha os itens à esquerda como no seu exemplo */
-    gap: 24px !important;          /* Espaçamento entre as imagens */
-    margin-top: 32px !important;
-    flex-wrap: wrap;               /* Se quebrar a tela em telas menores, eles vão para baixo suavemente */
-}
-
-/* O box individual de cada prato */
-.dish {
-    position: relative !important;
-    display: flex !important;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 20px;
-    gap: 18px;
-    padding: 20px;
-    background-color: pink;
-    box-shadow: 0px 0px 12px 4px rgba(0,0,0,0.1);
-}
-
-/* O tamanho perfeito e redondo que você aprovou */
-.dish img {
-    width: 150px !important;       /* Mantido o tamanho ideal */
-    height: 150px !important;      /* Altura idêntica para o círculo perfeito */
-    border-radius: 50% !important;  /* Formato circular */
-    object-fit: cover !important;   /* Evita distorção na imagem */
-    display: block !important;
-}
-
-/* Ajuste do ícone de coração sobreposto */
-.dish-heart {
-    position: absolute !important;
-    top: 15px !important;
-    left: 15px !important;
-    z-index: 10 !important;
-    font-size: 1.536rem;
-    color: #1d1d1d;
 }
