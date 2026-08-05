@@ -134,40 +134,32 @@
 
 }
 
-@media screen and (max-width:450px){
-
-    #home{
-        padding-top:110px;
+@media screen and (max-width: 1170px){
+    #home {
+        min-height: 100%;
+        padding-top: 0px;
+        flex-direction: column;
+        gap: 40px;
     }
 
-    #cta .title{
-        font-size:1.8rem;
+    #cta {
+        width: 100%;
+        text-align: center;
     }
 
-    #cta .description{
-        font-size:1rem;
+    #banner {
+        display: flex;
+        width: 100%;
     }
 
-    #cta_buttons{
-        flex-direction:column;
-        width:100%;
+    #banner img {
+        display: block;
+        width: 90%;
+        max-width: 400px;
+        height: auto;
     }
 
-    #cta_buttons a{
-        width:100%;
+    #banner::before {
+        display: block;
     }
-
-    .btn-default{
-        width:100%;
-    }
-
-    #phone_button{
-        justify-content:center;
-        width:100%;
-    }
-
-    #phone_button button{
-        display:none;
-    }
-
 }
