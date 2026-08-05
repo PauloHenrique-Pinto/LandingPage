@@ -6,14 +6,15 @@
     min-height: 100vh;
     padding: 60px 8%;
 }
+
 #dishes {
-    width: 110% !important;
+    width: 100% !important;              /* era 110% */
     display: flex !important;
     flex-direction: row !important;
     justify-content: center !important;
-    gap: 35px !important;               /* Aumentamos o espaçamento de 16px para 35px */
+    gap: 35px !important;
     margin-top: 32px !important;
-    flex-wrap: nowrap !important;       /* Mantém todos travados na mesma linha */
+    flex-wrap: wrap !important;          /* era nowrap */
 }
 
 .dish {
@@ -23,17 +24,17 @@
     align-items: center !important;
     border-radius: 20px !important;
     gap: 12px !important;
-    width: 17% !important;              /* Reduzido levemente de 18% para 17% para abrir espaço para o gap */
-    min-width: 140px !important;
+    width: 17% !important;
+    min-width: 200px !important;
     padding: 15px !important;
-    background-color: pink !important;  /* Sua cor rosa original mantida */
+    background-color: pink !important;
     box-shadow: 0px 0px 12px 4px rgba(0,0,0,0.1) !important;
 }
 
 /* Tamanho e formato redondo das fotos */
 .dish img {
-    width: 170px !important;
-    height: 170px !important;
+    width: 130px !important;
+    height: 130px !important;
     border-radius: 50% !important;
     object-fit: cover !important;
     display: block !important;
@@ -41,10 +42,10 @@
 
 .dish-heart {
     position: absolute;
-    background-color: pink;              /* Sua cor rosa mantida */
+    background-color: pink;
     display: flex;
     align-items: center;
-    align-content: center;
+    justify-content: center;
     font-size: 1.536rem;
     top: 15px;
     left: 15px;
@@ -52,22 +53,30 @@
 }
 
 @media screen and (max-width: 1170px) {
+
     #dishes{
-        flex-wrap: wrap;
         justify-content: center;
+        flex-wrap: wrap !important;
     }
 
-    .dish {
-        width: calc(50% - 12px);
+    .dish{
+        width: calc(50% - 35px) !important;
     }
+
 }
 
 @media screen and (max-width: 600px){
-    .dish {
-        width: calc(100% - 12px);
+
+    #dishes{
+        gap: 20px !important;
     }
 
-    #menu .section-subtitle {
+    .dish{
+        width: calc(100% - 20px) !important;
+    }
+
+    #menu .section-subtitle{
         text-align: center;
     }
+
 }
