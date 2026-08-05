@@ -87,79 +87,71 @@
     z-index: 1;          /* Fica por trás */
 }
 
-@media screen and (max-width:1170px){
+@media screen and (max-width: 1170px){
 
     #home{
         flex-direction: column;
-        justify-content: center;
         text-align: center;
-        padding-top: 120px;
-        gap: 40px;
+        min-height: auto;
+        gap: 30px;
     }
 
     #cta{
         width:100%;
-        display:flex;
-        flex-direction:column;
-        align-items:center;
-    }
-
-    #cta .title{
-        font-size:2.2rem;
-    }
-
-    #cta .description{
-        margin-top:20px;
-    }
-
-    #cta_buttons{
-        justify-content:center;
     }
 
     #banner{
         display:flex;
         width:100%;
-        margin-top:20px;
-    }
-
-    #banner::before{
-        display:none;
+        justify-content:center;
     }
 
     #banner img{
         display:block;
-        width:80%;
-        max-width:350px;
+        width:85%;
+        max-width:400px;
+        height:auto;
     }
 
+    #banner::before{
+        display:block;
+    }
 }
 
-@media screen and (max-width: 1170px){
-    #home {
-        min-height: 100%;
-        padding-top: 0px;
-        flex-direction: column;
-        gap: 40px;
+@media screen and (max-width:450px){
+
+    #home{
+        padding-top:110px;
     }
 
-    #cta {
-        width: 100%;
-        text-align: center;
+    #cta .title{
+        font-size:1.8rem;
     }
 
-    #banner {
-        display: flex;
-        width: 100%;
+    #cta .description{
+        font-size:1rem;
     }
 
-    #banner img {
-        display: block;
-        width: 90%;
-        max-width: 400px;
-        height: auto;
+    #cta_buttons{
+        flex-direction:column;
+        width:100%;
     }
 
-    #banner::before {
-        display: block;
+    #cta_buttons a{
+        width:100%;
     }
+
+    .btn-default{
+        width:100%;
+    }
+
+    #phone_button{
+        justify-content:center;
+        width:100%;
+    }
+
+    #phone_button button{
+        display:none;
+    }
+
 }
