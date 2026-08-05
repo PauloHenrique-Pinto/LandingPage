@@ -1,7 +1,7 @@
 header {
     width: 100%;
     padding: 28px 8%;
-    
+
     /* Versão para o menu acompanhar a rolagem da página */
     position: fixed;
     top: 0;
@@ -9,6 +9,7 @@ header {
     z-index: 9999;
     background-color: rgb(238, 114, 184);
 }
+
 #navbar {
     width: 100%;
     display: flex;
@@ -40,7 +41,6 @@ header {
 
 #mobile_btn{
     display: none;
-
 }
 
 #mobile_pictures{
@@ -48,10 +48,17 @@ header {
 }
 
 @media screen and (max-width: 1170px) {
+
+    /* NOVO */
+    header{
+        padding: 20px 5%;
+    }
+
     #nav_list,
     #navbar .btn-default {
         display: none;
     }
+
     #mobile_btn {
         display: block;
         border: none;
@@ -64,6 +71,8 @@ header {
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 100%;
+        margin-top: 20px;
     }
 
     #mobile_nav_list{
@@ -71,11 +80,38 @@ header {
         flex-direction: column;
         gap: 12px;
         margin: 12px 0px;
+        width: 100%;
+        padding: 0;
     }
 
-    #mobile_nav_list .nav_item{
+    #mobile_nav_list .nav_item,
+    #mobile_nav_list .mobile_nav_item{
         list-style: none;
         text-align: center;
     }
-    
+
+    #mobile_nav_list a{
+        display: block;
+        padding: 10px 0;
+        text-decoration: none;
+        color: black;
+        font-weight: 600;
+    }
+}
+
+/* NOVO */
+@media screen and (max-width: 480px){
+
+    header{
+        padding: 16px 5%;
+    }
+
+    #nav_logo{
+        font-size: 1.2rem;
+    }
+
+    #mobile_btn{
+        font-size: 1.4rem;
+    }
+
 }
