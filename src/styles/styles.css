@@ -8,6 +8,7 @@
 
 body {
     background-color: rgb(238, 114, 184);
+    overflow-x: hidden;
 }
 
 section{
@@ -85,4 +86,20 @@ html{
 .quiz-btn.wrong {
     background-color: #f44336 !important;
     color: white !important;
+}
+
+@media (max-width: 768px){
+
+    section{
+        padding: 24px 5%;
+    }
+
+    .section-title{
+        text-align: center;
+    }
+
+    .section-subtitle{
+        text-align: center;
+    }
+
 }
