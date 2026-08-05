@@ -66,9 +66,28 @@
 
 /* Ajuste para telas de celular */
 @media screen and (max-width: 600px) {
-    .testimonial-card {
-        flex-direction: column; /* No celular, o Homem-Aranha fica em cima do balão */
+
+    #testimonials{
+        padding: 40px 5%;
+    }
+
+    #testimonial_chef{
+        width: 100%;
+        max-width: 280px;
+    }
+
+    .testimonial-card{
+        flex-direction: column;
         gap: 12px;
         text-align: center;
     }
+
+    .testimonial-bubble{
+        padding: 18px 20px;
+    }
+
+    .testimonial-bubble p{
+        font-size: 1rem;
+    }
+
 }
